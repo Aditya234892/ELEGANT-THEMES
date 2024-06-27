@@ -16,8 +16,8 @@ body{
     height: 8vh;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    column-gap: 12%;
+    justify-content: space-between;
+    /* column-gap: 12%; */
     background-color: white;
     padding-top: 2px;
     position: fixed;
@@ -26,13 +26,14 @@ body{
 
 .header-image img{
     width: 80px;
+    margin-left: 4.5rem;
 }
 
 .nav-items{
     width: 100%;
     display: flex;
     align-items: center;
-    
+    margin-right: 6rem;
     list-style-type: none;
     font-size: 13.2px;
     font-weight: 700;
@@ -46,6 +47,14 @@ body{
     padding: 20px 30px;
     cursor: pointer;
 } 
+
+.menu{
+    position: absolute;
+    right: 3rem;
+    top: 1.2rem;
+    opacity: 0;
+    visibility: hidden;
+}
 
 .last-list-item{
 
@@ -589,5 +598,18 @@ body{
 
     span{
         color: #4715ef;
+    }
+}
+
+
+@media (max-width:1096px){
+    .nav-items{
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .menu{
+        opacity: 1;
+        visibility: visible;
     }
 }

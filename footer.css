@@ -55,7 +55,7 @@ footer{
 }
 
 .footer-1 .background-1{
-    width: 40%;
+    width: 40%; 
     position: relative;
     top: 15px;
     right: -5vw;
@@ -141,16 +141,19 @@ footer{
 }
 
 .footer-2 .cards{
-    width: 80%;
+    width: 80vw;
     /* background-color: #34DD65; */
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 40px;
 }
 
 .cards .card{
     /* background-color: #4837ff; */
-    width: 13.5%;
-    height: 17vh;
+    width: 160px;
+    height: 120px;
+    margin-bottom: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -160,6 +163,7 @@ footer{
     letter-spacing: 2px;
     font-weight: 600;
     font-size: 14px;
+    border-radius: 10px;
 }
 
 .cards .card:hover{
@@ -171,16 +175,23 @@ footer{
 
 .content{
     margin-top: 3%;
-    width: 76%;
-    height: 50%;
+    width: 85vw;
+    height: 25rem;
     /* background-color: #34DD65; */
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 62px;
+    /* overflow: hidden; */
 }
 
 .content .rows{
+    /* border: 2px solid rebeccapurple; */
+    width: 140px;
+    height: 400px;
     display: flex;
     flex-direction: column;
+    margin-bottom: 15px;
     /* align-items: start; */
     row-gap: 4%;
     p{
@@ -199,14 +210,17 @@ footer{
 }   
 
 .footer-images{
-    width: 35%;
-    margin-top: 4%;
+    /* border: 2px solid red; */
+    width: 32rem;
+    height: 22rem;
+    margin-top: 40px;
     display: flex;
     justify-content: space-between;
 }
 
 .copyright{
-    margin-top: 2.9%;
+    margin-top: 30px;
+    height: 50px;
     color: #6d7d90;
     font-size: 17px;
 }
