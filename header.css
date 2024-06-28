@@ -5,12 +5,6 @@
     box-sizing: border-box;
 }
 
-body{
-    width: 100vw;
-    /* background-color:#ff4ac2; */
-    width:100%;
-    height: 100%;
-}
 .header{
     width: 100vw;
     height: 8vh;
@@ -21,7 +15,8 @@ body{
     background-color: white;
     padding-top: 2px;
     position: fixed;
-    box-shadow: 0px 0px 60px 0px #8f42ec;
+    z-index: 20;
+    box-shadow: 0px 0px 60px 0px #e4d1f7;
 }
 
 .header-image img{
@@ -47,6 +42,11 @@ body{
     padding: 20px 30px;
     cursor: pointer;
 } 
+
+.nav-items li a{
+    text-decoration: none;
+    color:  #20292F99;
+}
 
 .menu{
     position: absolute;
@@ -94,7 +94,7 @@ body{
     transition: all 0.6s ease; 
 }
 
-.nav-1:hover{
+.nav-1:hover a{
     color: black;
 }
 
@@ -146,7 +146,7 @@ body{
     font-size: 17px;
     font-weight: 600;
     padding-top: 2%;
-    padding-left: 5%;
+    padding-left: 3%;
     display: flex;
     column-gap: 10%;
     p{
@@ -157,6 +157,21 @@ body{
 .products-and-services span{
     font-size: 13px;
     padding-left: 18px;
+    position: relative;
+    bottom: 8px;
+    left: 18px;
+    color: #6d7c90;
+}
+
+.products-and-services .first-icons
+{
+    position: relative;
+    right: 20px;
+    color: white;
+    font-size: 16px;
+    padding: 12px;
+    border-radius: 50%;
+    text-align: center;
 }
 
 .right-side-content .button{
@@ -164,16 +179,14 @@ body{
     color: white;
     border-radius: 30px;
     text-align: center;
-    display: inline;
-    padding: 15px 250px;
+    padding: 15px 220px;
     background-color: rgb(5, 120, 239);
     position: relative;
-    top: 25%;
+    top: 10%;
 }
 
-.button:hover{
+.right-side-content .button:hover{
     background-color: rgb(5, 130, 239);
-    top: 24.5%;
     transform: translateY(-4px);
     transition: all 0.4s ease-in-out;
 }
@@ -198,6 +211,16 @@ body{
 .features p:hover .fa-arrow-right{
     font-size: 16.5px;
     opacity: 1;
+}
+
+.right-side-content p:hover span{
+    color: #000;
+    transition: all 0.5s ease;
+}
+
+.right-side-content p:hover .first-icons{
+    transform: scale(1.1);
+    transition: all 0.5s ease;
 }
 
 .right-side-content .fa-arrow-right, .portions .fa-arrow-right{
@@ -317,7 +340,7 @@ body{
     transition: all 0.6s ease; 
 }
 
-.nav-2:hover{
+.nav-2:hover a{
     color: black;
 }
 
@@ -344,7 +367,7 @@ body{
     transition: all 0.6s ease; 
 }
 
-.nav-3:hover{
+.nav-3:hover a{
     color: black;
 }
 
@@ -356,7 +379,7 @@ body{
     justify-content: space-around;
 }
 
-.content {
+.hover-content-3 .content {
     h3{
         font-size: 17px;
     }
@@ -367,31 +390,31 @@ body{
     }
 }
 
-.content .portion-1{
+.hover-content-3  .content .portion-1{
     h3{
     color: #8f42ec;
     }
 }
 
-.content .portion-2{
+.hover-content-3  .content .portion-2{
     h3{
     color:#ff4ac2 ;
     }
 }
 
-.content .portion-3{
+.hover-content-3  .content .portion-3{
     h3{
     color:#34dd87;
     }
 }
 
-.content .portion-4{
+.hover-content-3  .content .portion-4{
     h3{
     color:#3776ff;
     }
 }
 
-.content .portion-5{
+.hover-content-3  .content .portion-5{
     h3{
     color: #ff7b2b;
     }
@@ -441,7 +464,7 @@ body{
     transition: all 0.3s ease; 
 }
 
-.nav-4:hover{
+.nav-4:hover a{
     color: black;
 }
 
@@ -523,7 +546,7 @@ body{
     transition: all 0.3s ease; 
 }
 
-.nav-5:hover{
+.nav-5:hover a{
     color: black;
 }
 
