@@ -114,8 +114,8 @@ body{
 
 .nav-1:hover a{
     color: black;
-    box-shadow: 0px 15px 70px 5px gray;
-    background-color: rgb(234, 231, 231);
+    box-shadow: 0px 15px 70px 5px rgb(193, 189, 189);
+    background-color: rgb(248, 244, 244);
 }
 
 .hover-content-1 .left-side-content{
@@ -290,7 +290,7 @@ body{
     text-align: center;
     border-radius: 10px;
     transform: scale(1.05);
-    transition: all 0.5s cubic-bezier(0.08, 0.4, 0.63, 0.99);
+    transition: all 0.15s cubic-bezier(0, 0, 0.63, 0.99);
     h3{
         margin: 15px 0px;
     }
@@ -368,13 +368,13 @@ body{
     opacity: 1;
     visibility: visible;
     cursor: pointer;
-    transition: all 0.6s ease; 
+    transition: all 0.4s ease; 
 }
 
 .nav-2:hover a{
     color: black;
-    box-shadow: 0px 15px 70px 5px gray;
-    background-color: rgb(234, 231, 231);
+    box-shadow: 0px 15px 70px 5px rgb(193, 189, 189);
+    background-color: rgb(248, 244, 244);
 }
 
 .hover-content-3{
@@ -410,8 +410,8 @@ body{
 
 .nav-3:hover a{
     color: black;
-    box-shadow: 0px 15px 70px 5px gray;
-    background-color: rgb(234, 231, 231);
+    box-shadow: 0px 15px 70px 5px rgb(193, 189, 189);
+    background-color: rgb(248, 244, 244);
 }
 
 .hover-content-3 .content{
@@ -519,8 +519,8 @@ body{
 
 .nav-4:hover a{
     color: black;
-    box-shadow: 0px 15px 70px 5px gray;
-    background-color: rgb(234, 231, 231);
+    box-shadow: 0px 15px 70px 5px rgb(193, 189, 189);
+    background-color: rgb(248, 244, 244);
 }
 
 .hover-content-4 .portions{
@@ -613,8 +613,8 @@ body{
 
 .nav-5:hover a{
     color: black;
-    box-shadow: 0px 15px 70px 5px gray;
-    background-color: rgb(234, 231, 231);
+    box-shadow: 0px 15px 70px 5px rgb(193, 189, 189);
+    background-color: rgb(248, 244, 244);
 }
 
 .hover-content-5 form{
@@ -917,6 +917,13 @@ main{
     border-radius: 10px;
 }
 
+/* @media (max-width: 1521px)
+{
+    .image-overlay{
+        visibility: hidden;
+    }
+} */
+
 .image-overlay .fa-play{
     position: absolute;
     z-index: 2;
@@ -1132,6 +1139,12 @@ main{
     /* border: 2px solid rebeccapurple; */
 }
 
+@media (max-width: 1105px){
+    .section-3{
+        flex-direction: column;
+    }
+}
+
 .section-3 .container-1{
     /* border: 2px solid red; */
     width: 24%;
@@ -1205,6 +1218,17 @@ main{
         font-size: 17px;
         line-height: 26px;
         color: #6d7d90;
+    }
+}
+
+.section-4 .image{
+    /* border: 2px solid red; */
+    width: fit-content;
+}
+
+@media (max-width: 1105px){
+    .section-4{
+        flex-direction: column;
     }
 }
 
